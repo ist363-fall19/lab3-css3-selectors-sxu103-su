@@ -5,21 +5,65 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900');
-
 body,
 html {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background-color: #313338;
-	color: #fff;
-	font: 1.125rem/1.4 'Muli', sans-serif;
+    background-color: #313338;
+    color: #fff;
+    font: 1.125rem/1.4 'Muli', sans-serif;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.article {
+    color: #242628;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .15);
+}
+
+.article-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.article-title::first-letter {
+    font-size: 72px;
+}
+
+.article-body {
+    line-height: 2;
+    color: white;
+}
+
+.aware::first-line {
+    font-weight: bold;
+    font-style: italic;
+}
+
+blockquote:first-of-type {
+    border: 6px double #07b07e;
+    background-color: #20c997;
+}
+
+blockquote:nth-of-type(2) {
+    border: 6px double #0062e6;
+    background-color: #007bff;
+}
+
+.article-body>p:last-child {
+    font-size: 14px;
 }
